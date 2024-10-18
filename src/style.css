@@ -3,6 +3,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(53, 53, 53);
+    color: rgb(226, 226, 226);
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -42,13 +46,64 @@ footer {
     bottom: 0;
 }
 
-.project {
-    background-color: #f4f4f4;
+.exp-text {
+    flex-grow: 1; /* Allow text container to take up available space */
+    margin-right: 20px; /* Space between text and image */  
+}
+
+.experience-ubc:hover {
+    background-color: #00185f;
     padding: 1rem;
     margin: 1rem 0;
 }
 
-.project:hover {
-    background-color: #89a6ff;
+.experience-ea:hover {
+    background-color: #ff5e00;
+    padding: 1rem;
+    margin: 1rem 0;
+}
 
+.experience-sfu:hover {
+    background-color: #ff000063;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.experience-ubc, .experience-ea, .experience-sfu {
+    display: flex;
+    justify-content: space-between; 
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.experience-ubc:hover, .experience-ea:hover, .experience-sfu:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+}
+
+a {
+    color: #007BFF; /* Default link color (blue) */
+    text-decoration: none; /* Remove underline if desired */
+    transition: color 0.3s ease-in-out; /* Smooth transition when color changes */
+}
+
+a:hover {
+    color: #FF4500; /* Change color on hover (orange) */
+}
+
+a:visited {
+    color: #ffffff; /* Color for visited links (purple) */
+}
+
+a:active {
+    color: #FF6347; /* Color for active (clicked) links (tomato red) */
+}
+
+.responsive-image {
+    width: 50%;
+    height: auto;
 }
