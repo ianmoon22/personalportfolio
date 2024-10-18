@@ -1,0 +1,121 @@
+#about {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(22, 22, 22);
+    color: rgb(226, 226, 226);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.exp-text {
+    flex-grow: 1; /* Allow text container to take up available space */
+    margin-right: 20px; /* Space between text and image */  
+}
+
+.experience-ubc:hover {
+    background-color: #00185f;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.experience-ea:hover {
+    background-color: #ff5e00;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.experience-sfu:hover {
+    background-color: #5a0000;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.experience-ubc, .experience-ea, .experience-sfu {
+    display: flex;
+    justify-content: space-between; 
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.experience-ubc:hover, .experience-ea:hover, .experience-sfu:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+}
+
+a {
+    color: #ffffff; /* Default link color (blue) */
+    text-decoration: none; /* Remove underline if desired */
+    transition: color 0.3s ease-in-out; /* Smooth transition when color changes */
+}
+
+a:visited {
+    color: #ffffff; /* Color for visited links (purple) */
+}
+
+.responsive-image {
+    width: 50%;
+    height: auto;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it stays behind other content */
+}
+
+.email-icon, .linkedin-icon {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}

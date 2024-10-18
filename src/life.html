@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Moon - Portfolio</title>
+    <link rel="stylesheet" href="life.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="life.html">Life Outside of Work</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="life.js"></script>
+
+    <section id="about">
+        <h3>Welcome to my personal life.</h3>
+    </section>
+    
+    <section id="videos" style="text-align: center; margin: 2rem 0;">
+        <div class="video-container">
+            <div class="video-controls">
+                <button id="prevButton"><-</button>
+            </div>
+            <video id="videoPlayer" controls>
+                <source src="../resources/doggy.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-controls">
+                <button id="nextButton">-></button>
+            </div>
+        </div>
+    </section>
+    <script src="life.js"></script>
+
+</body>
