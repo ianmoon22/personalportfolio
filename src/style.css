@@ -37,7 +37,7 @@ footer {
     padding: 1rem;
     background-color: #333;
     color: white;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
@@ -46,4 +46,9 @@ footer {
     background-color: #f4f4f4;
     padding: 1rem;
     margin: 1rem 0;
+}
+
+.project:hover {
+    background-color: #a3afd4;
+
 }
