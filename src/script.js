@@ -4,9 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 particlesJS("particles-js", {
     particles: {
-        number: { value: 80 },
-        size: { value: 3 },
-        move: { speed: 2 },
+        number: { value: 50 },
+        size: { value: 22 },
+        move: { speed: 3 },
+        color: { value: "#292828"}
     },
     interactivity: {
         events: {
