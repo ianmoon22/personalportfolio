@@ -36,12 +36,13 @@
         font-size: 1.5vw !important;
         padding: 0px !important;
     }
-    .logo {
-        margin-left: 10px !important;
-        width: 20px io !important;
-        height: auto !important; 
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 2vw !important;
+        padding: 0px !important;
     }
-    
 }
 
 
