@@ -91,3 +91,34 @@ button {
 button:hover {
     background-color: #818181; /* Darker button color on hover */
 }
+
+@media (max-width: 768px) {
+    /* Make video take up more width on mobile */
+    #videos {
+        width: 90%; /* Take up most of the screen width on mobile */
+        padding: 10px; /* Less padding for smaller screens */
+    }
+
+    /* Ensure buttons and layout stack properly */
+    .video-container {
+        flex-direction: column; /* Stack video and buttons vertically */
+        align-items: center;
+    }
+
+    img {
+        width: 30px; /* Make images smaller on mobile */
+    }
+
+    video {
+        width: 100%; /* Full width of the screen */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        text-align: center; /* Center nav items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add space between stacked items */
+    }
+}
