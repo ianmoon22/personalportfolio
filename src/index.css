@@ -44,7 +44,8 @@
     }
 
     .resume {
-        font-size: 5vw !important;
+        font-size: 3.5vw !important;
+        max-width: 60% !important;
     }
 
     body {
