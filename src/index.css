@@ -39,6 +39,10 @@
 }
 
 @media (max-width: 400px) {
+    #about {
+        font-size: 4vw !important;
+    }
+
     body {
         font-size: 4vw !important;
         padding: 0px !important;
