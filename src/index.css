@@ -1,10 +1,14 @@
 #about {
     text-align: center;
+    display: flex;
+    flex-direction: column;
     font-size: 1.8rem;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -83,10 +87,11 @@ footer {
     padding: 1rem;
     margin: 1rem 0;
     transform: translateY(-10px); /* Slight lift on hover */
+    background-color: rgb(80, 80, 80);
 }
 
 .resume {
-    width: 20%;
+    max-width: 10%;
     font-size: 1rem;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
@@ -114,13 +119,13 @@ footer {
 }
 
 a {
-    color: #ffffff; /* Default link color (blue) */
     text-decoration: none; /* Remove underline if desired */
     transition: color 0.3s ease-in-out; /* Smooth transition when color changes */
+    color: #ffffff; 
 }
 
 a:visited {
-    color: #ffffff; /* Color for visited links (purple) */
+    color: #ffffff; 
 }
 
 .responsive-image {
@@ -150,4 +155,8 @@ a:visited {
     height: auto;
     vertical-align: middle;
     margin-right: 5px;
+}
+
+.linkedin-icon {
+    margin-left: 10px;
 }
