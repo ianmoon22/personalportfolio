@@ -1,5 +1,6 @@
 #about {
     text-align: center;
+    font-size: 1.8rem;
 }
 
 body {
@@ -56,19 +57,19 @@ footer {
 }
 
 .experience-ubc:hover {
-    background-color: #00185f;
+    background-color: #002145;
     padding: 1rem;
     margin: 1rem 0;
 }
 
 .experience-ea:hover {
-    background-color: #ff5e00;
+    background-color: #6E34EB;
     padding: 1rem;
     margin: 1rem 0;
 }
 
 .experience-sfu:hover {
-    background-color: #5a0000;
+    background-color: #A6192E;
     padding: 1rem;
     margin: 1rem 0;
 }

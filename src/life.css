@@ -1,4 +1,5 @@
 body {
+    text-align: center;
     font-family: Arial, sans-serif;
     padding: 1rem;
     box-sizing: border-box;
@@ -51,6 +52,18 @@ nav ul li a {
     align-items: center; /* Center align items vertically */
     justify-content: space-between; /* Center align items horizontally */
     margin-bottom: 20px; /* Space below the video */
+}
+
+.button {
+    width: 30px;
+    
+}
+
+img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
 }
 
 video {
