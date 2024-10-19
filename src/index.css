@@ -56,6 +56,11 @@ footer {
     margin-right: 20px; /* Space between text and image */  
 }
 
+.exp-text-ea {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
 .experience-ubc:hover {
     background-color: #002145;
     padding: 1rem;
@@ -70,6 +75,24 @@ footer {
 
 .experience-sfu:hover {
     background-color: #A6192E;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.resume:hover {
+    padding: 1rem;
+    margin: 1rem 0;
+    transform: translateY(-10px); /* Slight lift on hover */
+}
+
+.resume {
+    width: 20%;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
     padding: 1rem;
     margin: 1rem 0;
 }
@@ -101,8 +124,16 @@ a:visited {
 }
 
 .responsive-image {
-    width: 50%;
+    width: 40vw;
     height: auto;
+    min-width: 350px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+@media (max-width: 900px) {
+    img {
+        display: none;
+    }
 }
 
 #particles-js {
