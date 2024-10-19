@@ -27,32 +27,35 @@
     height: 100%;
 }
 
-/* Specific Media Query for Responsive Images */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+
     .responsive-image {
         display: none;
     }
 }
+
 
 /* Other styles from the original CSS file */
 #about {
     text-align: center;
     display: flex;
     flex-direction: column;
-    font-size: 1.8rem;
+    font-size: 2vw;
     justify-content: center;
     align-items: center;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
     margin: 0;
-    padding: 0;
+    padding: 0 200px;
     box-sizing: border-box;
     background-color: rgb(22, 22, 22);
     color: rgb(255, 255, 255);
-    max-width: 100%;
     overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 #experience{
@@ -60,7 +63,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: rgb(22, 22, 22);
     color: white;
     padding: 1rem;
     text-align: center;
@@ -89,7 +92,7 @@ section {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #333;
+    background-color: rgb(22, 22, 22);
     color: white;
     position: relative;
     width: 100%;
@@ -133,7 +136,7 @@ footer {
 
 .resume {
     max-width: 10%;
-    font-size: 1rem;
+    font-size: 0.8vw;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -174,16 +177,11 @@ a:visited {
 }
 
 .responsive-image {
+    object-fit: cover;
     width: 40vw;
     height: auto;
     min-width: 350px;
     transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-@media (max-width: 900px) {
-    img {
-        display: none;
-    }
 }
 
 #particles-js {
@@ -218,19 +216,19 @@ a:visited {
 }
 
 .slide-in-left {
-    transform: translateX(-100%); /* Start off-screen to the left */
+    transform: translateX(-30%); /* Start off-screen to the left */
     opacity: 0; /* Start invisible */
     transition: transform 2s ease, opacity 2s ease; /* Slow transition */
 }
 
 .slide-in-right {
-    transform: translateX(100%); /* Start off-screen to the right */
+    transform: translateX(30%); /* Start off-screen to the right */
     opacity: 0; /* Start invisible */
     transition: transform 2s ease, opacity 2s ease; /* Slow transition */
 }
 
 .slide-in-right-2 {
-    transform: translateX(-100%); /* Start off-screen to the left */
+    transform: translateX(-30%); /* Start off-screen to the left */
     opacity: 0; /* Start invisible */
     transition: transform 2s ease, opacity 2s ease; /* Slow transition */
 }
