@@ -1,3 +1,40 @@
+/* Consolidated Padding and Margin for Experience Classes */
+.experience-ubc, .experience-ea, .experience-sfu, .resume {
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* Hover Effects Consolidated */
+.experience-ubc:hover, .experience-ea:hover, .experience-sfu:hover {
+    background-color: #002145; /* Set unique hover color if needed */
+    padding: 1rem;
+    margin: 1rem 0;
+    transform: translateY(-10px);
+}
+
+/* Fixed Redundant Padding and Margin */
+.resume {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Shortened #particles-js Properties */
+#particles-js {
+    position: fixed;
+    inset: 0; /* Shortened for top, left, right, and bottom: 0 */
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+/* Specific Media Query for Responsive Images */
+@media (max-width: 900px) {
+    .responsive-image {
+        display: none;
+    }
+}
+
+/* Other styles from the original CSS file */
 #about {
     text-align: center;
     display: flex;
@@ -13,7 +50,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(22, 22, 22);
-    color: rgb(226, 226, 226);
+    color: rgb(255, 255, 255);
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -91,7 +128,7 @@ footer {
     padding: 1rem;
     margin: 1rem 0;
     transform: translateY(-10px); /* Slight lift on hover */
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(65, 65, 65);
 }
 
 .resume {
