@@ -32,6 +32,9 @@
     .responsive-image {
         display: none;
     }
+    body {
+        font-size: 1.5vw !important;
+    }
 }
 
 
