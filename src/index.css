@@ -160,3 +160,27 @@ a:visited {
 .linkedin-icon {
     margin-left: 10px;
 }
+
+.fade-in {
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 2s ease-in forwards; /* 2s fade-in effect */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* End at full visibility */
+    }
+}
+
+.slide-in {
+    transform: translateX(-100%); /* Start off-screen to the left */
+    opacity: 0; /* Start invisible */
+    animation: slideIn 1s ease forwards; /* 1s slide-in effect */
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0); /* End at original position */
+        opacity: 1; /* End fully visible */
+    }
+}
