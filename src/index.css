@@ -37,9 +37,9 @@
         padding: 0px !important;
     }
     .logo {
-        margin-left: 10px;
-        width: 20px;
-        height: auto; 
+        margin-left: 10px !important;
+        width: 20px io !important;
+        height: auto !important; 
     }
     
 }
@@ -95,7 +95,7 @@ nav ul li a {
 }
 
 section {
-    padding: 2rem;
+    padding: 1rem;
     margin: 1rem 0;
 }
 
