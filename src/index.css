@@ -1,3 +1,25 @@
+/* Keyframes for the typing animation */
+@keyframes typing {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+  
+  /* Style for the text container */
+  .typing-effect {
+    overflow: hidden; /* Hide the extra text */
+    white-space: nowrap; /* Prevent text from wrapping */
+    border-right: 2px solid black; /* Simulate the cursor */
+    width: 0; /* Start with no width */
+    animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end 1s forwards; /* Typing and blinking cursor */
+  }
+  
+  /* Cursor blinking animation */
+  @keyframes blink {
+    50% { border-color: transparent; }
+    100% {border-color: transparent;}
+  }
+  
+
 /* Consolidated Padding and Margin for Experience Classes */
 .experience-ubc, .experience-ea, .experience-sfu, .resume {
     padding: 1rem;

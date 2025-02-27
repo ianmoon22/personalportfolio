@@ -1,124 +1,59 @@
+
 body {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: rgb(22, 22, 22);
-    color: rgb(226, 226, 226);
-    max-width: 100%;
-    overflow-x: hidden;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #141414;
+  }
 
 
-.video-wrapper {
-    display: flex; /* Use Flexbox to center the video section */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusts column size based on available space */
+    gap: 16px;
+    width: 90%;
+    height: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .gallery img {
+    width: 95%;
+    max-width: 400px; /* Ensures each image never exceeds 400px */
+    height: 90%; /* Maintains aspect ratio */
+    object-fit: cover; /* Keeps the entire image visible */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.15);
+  }
 
-header {
-    background-color: rgb(22, 22, 22);
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
+  .gallery-item figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0;
+    z-index: 1; /* Ensure figcaption is above the image */
+    pointer-events: none; /* Allow hover effect on image */
+    transition: opacity 0.3s ease;
+  }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-#videos {
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    padding: 20px; /* Padding around the content */
-    max-width: 800px; /* Max width of the section */
-    width: 40%;
-}
-
-.video-container {
-    display: flex; /* Use Flexbox for layout */
-    align-items: center; /* Center align items vertically */
-    justify-content: space-between; /* Center align items horizontally */
-    margin-bottom: 20px; /* Space below the video */
-}
-
-.button {
-    width: 30px;
-    margin: 40px;
-}
-
-img {
-    width: 50px; /* Adjust size as needed */
-    height: auto;
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effects */
-}
-
-video {
-    width: 50%; /* Full width of the container */
-    max-width: 600px; /* Max width for the video */
-    border-radius: 8px; /* Rounded corners for the video */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for the video */
-    transition: opacity 0.5s ease; /* Transition for opacity */
-}
-
-.video-controls {
-    display: flex; /* Use Flexbox for button layout */
-}
-
-button {
-    padding: 10px 15px; /* Padding for buttons */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    background-color: #474747; /* Button color */
-    color: white; /* Text color */
-    cursor: pointer; /* Pointer on hover */
-    transition: background-color 0.3s; /* Smooth background color transition */
-}
-
-button:hover {
-    background-color: #818181; /* Darker button color on hover */
-}
-
-@media (max-width: 768px) {
-    /* Make video take up more width on mobile */
-    #videos {
-        width: 90%; /* Take up most of the screen width on mobile */
-        padding: 10px; /* Less padding for smaller screens */
-    }
-
-    /* Ensure buttons and layout stack properly */
-    .video-container {
-        flex-direction: column; /* Stack video and buttons vertically */
-        align-items: center;
-    }
-
-    img {
-        width: 30px; /* Make images smaller on mobile */
-    }
-
-    video {
-        width: 100%; /* Full width of the screen */
-    }
-
-    nav ul {
-        flex-direction: column; /* Stack navigation items vertically */
-        text-align: center; /* Center nav items */
-    }
-
-    nav ul li {
-        margin: 10px 0; /* Add space between stacked items */
-    }
-}
+  /* Show caption on hover */
+.gallery-item:hover figcaption {
+    opacity: 1;
+  }
+  

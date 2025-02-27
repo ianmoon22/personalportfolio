@@ -41,5 +41,3 @@ document.addEventListener("scroll", () => {
         rightDiv2.classList.remove("visible"); // Slide out when not in view
     }
 });
-
-
